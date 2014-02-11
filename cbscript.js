@@ -1,4 +1,5 @@
 /* Funções */
+/* Testando commit */
 function getMes()
 {
 	var d = new Date();
