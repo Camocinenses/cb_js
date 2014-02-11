@@ -219,7 +219,7 @@ function seEncontra(nome, registro)
 
 function numAnuncios()
 {
-	//document.getElementById('numAnuncios').innerHTML = anuncio.length;
+	return anuncio.length;
 }
 
 function getPosicaoColuna(posicaoi)
@@ -463,7 +463,6 @@ function gerarMapa(coordenadas)
 			});
 		};
 		initialize();
-		//google.maps.event.addDomListener(window, 'load', initialize);
 }
 
 function NavegadorTiozinho()
@@ -472,16 +471,7 @@ function NavegadorTiozinho()
 	window.location.href="https://www.google.com/intl/pt-BR/chrome/browser/?hl=pt-BR&brand=CHMI";
 }
 
-function diversao()
-{
-/*	if (posicaoAnuncio == 0) {
-		document.getElementById('anuncie').style.left = '667px';
-		posicaoAnuncio = 1;
-	} else {
-		document.getElementById('anuncie').style.left = '0px';
-		posicaoAnuncio = 0;		
-	}*/
-}
+
 function colorir()
 {
 	try
@@ -532,7 +522,7 @@ function voltar()
 		limparPesquisa();
 		if (posicao != 0)
 		{
-			//document.getElementById(posicao).scrollIntoView(false);
+
 		}
 	}
 	posicao = 0;
@@ -566,7 +556,7 @@ function getParceiros()
 
 
 mostra('carregamento');
-//document.getElementsByTagName('body')[0].style.background="#e6e6e6  url('http://3.bp.blogspot.com/-OYiEHV8J2Rc/Ui-b3SD5-2I/AAAAAAAABhQ/gOIfQNAumTo/s1600/fundo3.png') center center repeat-y fixed";
+
 var parceiros = new Array();
 var url = window.location.href;
 var parametros = url.split('?');
@@ -600,7 +590,6 @@ numAnuncios();
 
 var posicaoAnuncio = 0;
 
-//colorir();
 document.getElementsByTagName('body')[0].style.display = 'block';
 
 for (i in anuncio)
